@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1173</width>
+    <height>696</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMeter" name="VoltsMeter">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>231</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>7</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="Title">
+     <string>Volts</string>
+    </property>
+    <property name="textsOffset">
+     <number>23</number>
+    </property>
+    <property name="arcThickness" stdset="0">
+     <number>3</number>
+    </property>
+    <property name="maximum">
+     <double>9.000000000000000</double>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="majorColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="arcColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="needleColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="pivotPointColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="needlesFillColor">
+     <color>
+      <red>128</red>
+      <green>128</green>
+      <blue>128</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QMeter" name="SpeedMeter">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>331</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Droid Sans Thai</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="Title">
+     <string>Speed</string>
+    </property>
+    <property name="textsOffset">
+     <number>48</number>
+    </property>
+    <property name="arcThickness" stdset="0">
+     <number>2</number>
+    </property>
+    <property name="majorInterval" stdset="0">
+     <number>10</number>
+    </property>
+    <property name="majorOver" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="NeedlesWidth">
+     <number>7</number>
+    </property>
+    <property name="maximum">
+     <double>120.000000000000000</double>
+    </property>
+    <property name="needleColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>128</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="pivotPointColor">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="useGradient" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="needlesFillColor">
+     <color>
+      <red>192</red>
+      <green>0</green>
+      <blue>3</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QMeter" name="AmpsMeter">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>10</y>
+      <width>300</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="Title">
+     <string>Amps</string>
+    </property>
+    <property name="majorOver" stdset="0">
+     <number>7</number>
+    </property>
+    <property name="majorUnder" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="minorInterval" stdset="0">
+     <number>4</number>
+    </property>
+    <property name="minorOver" stdset="0">
+     <number>10</number>
+    </property>
+    <property name="minorUnder" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="NeedlesWidth">
+     <number>3</number>
+    </property>
+    <property name="maximum">
+     <double>7.000000000000000</double>
+    </property>
+    <property name="offsetAngle">
+     <double>45.000000000000000</double>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>46</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="needleColor" stdset="0">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="useGradient" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="drawArc">
+     <bool>false</bool>
+    </property>
+    <property name="needlesFillColor">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QMeter" name="PSI_Meter">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>150</y>
+      <width>441</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yudit</family>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="Title">
+     <string>P. S. I.</string>
+    </property>
+    <property name="value">
+     <double>35.000000000000000</double>
+    </property>
+    <property name="textsOffset">
+     <number>77</number>
+    </property>
+    <property name="arcThickness" stdset="0">
+     <number>7</number>
+    </property>
+    <property name="majorOver" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="majorUnder" stdset="0">
+     <number>30</number>
+    </property>
+    <property name="minorInterval" stdset="0">
+     <number>2</number>
+    </property>
+    <property name="minorOver" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="NeedlesWidth">
+     <number>20</number>
+    </property>
+    <property name="minimum" stdset="0">
+     <double>35.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>60.000000000000000</double>
+    </property>
+    <property name="offsetAngle">
+     <double>10.000000000000000</double>
+    </property>
+    <property name="background">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>93</blue>
+     </color>
+    </property>
+    <property name="majorColor">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="minorColor">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="arcColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>192</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="needleColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="pivotPointColor">
+     <color>
+      <red>0</red>
+      <green>179</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="needlesFillColor">
+     <color>
+      <red>88</red>
+      <green>88</green>
+      <blue>88</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QSlider" name="AmpsSlider">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>120</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>64</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>64</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>64</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="maximum">
+     <number>101</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="PSI_Slider">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>430</y>
+      <width>441</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>101</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="SpeedSlider">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>10</y>
+      <width>16</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>128</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>128</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>128</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="maximum">
+     <number>101</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ExitButton">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>660</y>
+      <width>94</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>64</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>157</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>64</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>157</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>64</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="VoltsSlider">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>20</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>128</red>
+          <green>128</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>128</red>
+          <green>128</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>128</red>
+          <green>128</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="maximum">
+     <number>101</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="VoltsSliderLabel">
+    <property name="geometry">
+     <rect>
+      <x>218</x>
+      <y>170</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SpeedSliderLavel">
+    <property name="geometry">
+     <rect>
+      <x>668</x>
+      <y>230</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AmpsSliderLabel">
+    <property name="geometry">
+     <rect>
+      <x>1078</x>
+      <y>10</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PSI_SliderLabel">
+    <property name="geometry">
+     <rect>
+      <x>1118</x>
+      <y>450</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="VoltsLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>170</y>
+      <width>41</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SpeedLabel">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>230</y>
+      <width>41</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AmpsLabel">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>90</y>
+      <width>51</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PSI_Label">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>450</y>
+      <width>51</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCDial" name="Dail1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>225</width>
+      <height>225</height>
+     </rect>
+    </property>
+    <property name="drawingInterCircle" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="majorOver" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="majorUnder" stdset="0">
+     <number>25</number>
+    </property>
+    <property name="minorOver" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="minorUnder" stdset="0">
+     <number>15</number>
+    </property>
+    <property name="majorColor">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QCDial" name="Dial2">
+    <property name="geometry">
+     <rect>
+      <x>394</x>
+      <y>270</y>
+      <width>251</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="maxValue">
+     <double>400.000000000000000</double>
+    </property>
+    <property name="textsOffset">
+     <number>101</number>
+    </property>
+    <property name="majorInterval" stdset="0">
+     <number>25</number>
+    </property>
+    <property name="majorOver" stdset="0">
+     <number>-5</number>
+    </property>
+    <property name="majorUnder" stdset="0">
+     <number>15</number>
+    </property>
+    <property name="minorOver" stdset="0">
+     <number>-3</number>
+    </property>
+    <property name="needleColor" stdset="0">
+     <color>
+      <red>64</red>
+      <green>64</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="needlesFillColor">
+     <color>
+      <red>56</red>
+      <green>33</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="pivotPointColor">
+     <color>
+      <red>64</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>192</red>
+      <green>88</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="majorColor">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="interCircleColor">
+     <color>
+      <red>128</red>
+      <green>128</green>
+      <blue>128</blue>
+     </color>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCDial</class>
+   <extends>QWidget</extends>
+   <header>QCDial.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QMeter</class>
+   <extends>QWidget</extends>
+   <header>QMeter.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PSI_Slider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PSI_slot1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1015</x>
+     <y>443</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>615</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ExitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1131</x>
+     <y>667</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>128</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AmpsSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Amps_slot1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>920</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VoltsSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Volts_slot1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SpeedSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Speed_slot1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>712</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>754</x>
+     <y>83</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>PSI_slot1()</slot>
+  <slot>Amps_slot1()</slot>
+  <slot>Volts_slot1()</slot>
+  <slot>Speed_slot1()</slot>
+ </slots>
+</ui>
